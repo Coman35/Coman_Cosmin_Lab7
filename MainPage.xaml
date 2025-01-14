@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ComanCosminLab7.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15" VerticalOptions="Center">
+            <Image Source="shopping_cart.png"
+                   HeightRequest="200"
+                   WidthRequest="200"
+                   HorizontalOptions="Center"/>
+            <!-- Text personalizat -->
+            <Label Text="Lista mea de cumpărături – Coman Cosmin"
+                   FontSize="24"
+                   HorizontalTextAlignment="Center"
+                   VerticalOptions="Start"
+                   TextColor="Red"/>
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="dot net bot in a race car number eight" />
+            <Button Text="Vezi lista mea"
+                    FontSize="18"
+                    HorizontalOptions="Center"
+                    VerticalOptions="End"
+                    Clicked="OnNavigateButtonClicked"/>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
